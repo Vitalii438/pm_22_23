@@ -33,8 +33,18 @@ function watchFiles() {
   watch("app/img/*", series(img_task, reload));
 }
 
-const build = parallel(html_task, scss_task, css_task, img_task, js_task);
+const build = parallel(html_task, scss_task, css_task, img_task, js_task, bootstrapCSS, bootstrapJS);
 exports.default = series(build, serve, watchFiles);
+
+function bootstrapCSS(done) {
+    return src("node_modules/bootstrap/dist/css/bootstrap.min.css")
+        .pipe(dest("dist/css"));
+}
+
+function bootstrapJS(done) {
+    return src("node_modules/bootstrap/dist/js/bootstrap.bundle.min.js")
+        .pipe(dest("dist/js"));
+}
 
 function html_task(done) {
   return src("app/*.html")
