@@ -31,9 +31,10 @@ function watchFiles() {
   watch("app/scss/*.scss", series(scss_task, reload));
   watch("app/js/*.js", series(js_task, reload));
   watch("app/img/*", series(img_task, reload));
+  watch("app/svg/*", series(svg_task, reload));
 }
 
-const build = parallel(html_task, scss_task, css_task, img_task, js_task, bootstrapCSS, bootstrapJS);
+const build = parallel(html_task, scss_task, css_task, img_task, svg_task, js_task, bootstrapCSS, bootstrapJS);
 exports.default = series(build, serve, watchFiles);
 
 function bootstrapCSS(done) {
@@ -80,6 +81,11 @@ function img_task(done) {
     .pipe(imagemin())
     .pipe(rename({ suffix: ".min" }))
     .pipe(dest("dist/img"));
+}
+
+function svg_task(done) {
+    return src("app/svg/*.svg")
+        .pipe(dest("dist/svg"));
 }
 
 function js_task(done) {
