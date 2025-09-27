@@ -88,6 +88,35 @@
   font-style: normal;
 }
 
+.montserrat-thin-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.montserrat-light-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.montserrat-regular-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.montserrat-bold-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.montserrat-black-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
 
 
 body {
