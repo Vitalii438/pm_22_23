@@ -1,0 +1,29 @@
+@use 'components/scss/general' as *;
+
+
+.people-shape{
+    @include image-size(180px, 32px);
+    margin-bottom: -46px;
+}
+
+
+.people-title-main{
+    @include text-style(140%);
+    margin-left: 35px;
+    display: flex;
+}
+
+.people-title-secondary{
+    @include text-style(140%);
+    font-size: 120%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.people-title-third{
+    @include text-style(140%);
+}
+
+.people-text{
+    @include text-style(140%);
+}

@@ -1,0 +1,21 @@
+@use "components/scss/general" as *;
+
+.languages-shape-long {
+  @include image-size(200px, 20px);
+  display: block;
+  margin-top: -21px;
+  margin-left: 148px;
+}
+
+.languages-shape-short {
+  @include image-size(100px, 20px);
+  margin-top: -47px;
+  margin-left: 148px;
+}
+
+.languages-title-secondary {
+  @include text-style(140%);
+  font-size: 120%;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}

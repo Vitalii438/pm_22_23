@@ -1,0 +1,37 @@
+@use "components/scss/general" as *;
+
+.experience {
+  @include rounded-border();
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.experience-shape {
+  @include image-size(230px, 40px);
+  margin-top: -20px;
+  margin-bottom: -46px;
+  display: flex;
+  justify-self: center;
+}
+
+.experience-title-main {
+  @include text-style(140%, white);
+  margin-top: 13px;
+  text-align: center;
+}
+
+.experience-title-secondary {
+  @include text-style(130%);
+  font-size: 120%;
+  margin-top: 10px;
+}
+
+.experience-title-third {
+  @include text-style(120%);
+}
+
+.experience-text {
+  @include text-style(100%);
+}

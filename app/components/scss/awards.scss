@@ -1,0 +1,26 @@
+@use "components/scss/general" as *;
+
+.awards-shape {
+  @include image-size(180px, 32px);
+  margin-bottom: -46px;
+}
+
+.awards-title-main {
+  @include text-style(140%, white);
+  margin-left: 35px;
+  display: flex;
+}
+
+.awards-title-secondary {
+  @include text-style(120%);
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.awards-title-third {
+  @include text-style(110%);
+}
+
+.awards-text {
+  @include text-style(100%);
+}

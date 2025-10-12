@@ -1,0 +1,33 @@
+@use "components/scss/general" as *;
+
+.languages-top-shape-horizontal {
+  @include image-size(350px, 35px);
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.languages-top-shape-vertical {
+  @include image-size(75px, 10px);
+  rotate: 90deg;
+}
+
+.languages-top-shape-vertical-l {
+  @extend .languages-top-shape-vertical;
+  margin-bottom: -68px;
+  margin-left: 27px;
+}
+
+.languages-top-shape-vertical-r {
+  @extend .languages-top-shape-vertical;
+  margin-top: -58px;
+  margin-left: 330px;
+}
+
+.languages-top-title-main {
+  @include text-style(200%);
+  margin: 0;
+  text-align: center;
+}

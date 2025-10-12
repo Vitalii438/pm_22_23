@@ -1,0 +1,41 @@
+@use 'components/scss/general' as *;
+
+
+.hobbies-shape{
+    @include image-size(170px, 22px);
+    margin-bottom: -190px;
+    margin-left: 20px;
+     rotate: 90deg;
+}
+
+
+.hobbies-title-main{
+    @include text-style(220%);
+    margin-left: 80px;
+    margin-top: 25px;
+    margin-bottom: -15px;
+    display: flex;
+}
+
+.hobbies-title-secondary{
+    @include text-style(130%);
+    margin-left: 130px;
+}
+
+.underlined{
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    position: relative;
+}
+
+.underlined::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50px;
+  right: 90%;
+  top: 92%;
+  width: 75px;
+  height: 5px;
+  background-color: black;
+}

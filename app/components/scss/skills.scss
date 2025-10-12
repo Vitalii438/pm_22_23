@@ -1,0 +1,44 @@
+@use "components/scss/general" as *;
+
+.skills-icone {
+  @include image-size(40px, 40px);
+  margin-bottom: -65px;
+}
+
+.skills-shape-main {
+  @include image-size(350px, 7px);
+  margin-top: -35px;
+  margin-bottom: 30px;
+  margin-right: 80px;
+  display: flex;
+  justify-self: end;
+}
+
+.skills-shape-long {
+  @include image-size(250px, 20px);
+  display: block;
+}
+
+.skills-shape-short {
+  @include image-size(125px, 21px);
+  margin-top: -46px;
+}
+
+.skills-shape-point {
+  @include image-size(30px, 15px);
+  rotate: 90deg;
+  margin-left: -20px;
+  margin-top: -49px;
+}
+
+.skills-title-main {
+  @include text-style(230%);
+  margin-left: 45px;
+  display: flex;
+}
+
+.skills-title-secondary {
+  @include text-style(140%);
+  font-size: 120%;
+  margin-top: 10px;
+}

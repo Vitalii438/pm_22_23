@@ -1,3 +1,41 @@
-body{
-    background-color: rgb(140, 255, 0);
+@use 'components/scss/general' as *;
+
+.about-shape{
+    @include image-size(200px, 35px);
+    margin-bottom: -43px;
+}
+
+.about-shape-long{
+    @include image-size(100%, 7px);
+    margin-top: 32px;
+}
+
+.about-icone{
+    @include image-size(23px, 23px);
+    margin-bottom: -40px;
+    margin-left: -186px;
+}
+
+.about-title-main{
+    @include text-style(150%, white);
+    margin-left: 42px;
+    margin-top: -2px;
+    display: flex;
+}
+
+.about-title-secondary{
+    @include text-style(140%);
+    font-size: 120%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.about-title-third{
+    @include text-style(140%);
+     margin-bottom: 0px;
+}
+
+.about-text{
+    @include text-style(100%);
+     margin-bottom: 0px;
 }

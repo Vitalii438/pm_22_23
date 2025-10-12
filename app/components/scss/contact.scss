@@ -1,0 +1,27 @@
+@use 'components/scss/general' as *;
+
+.contact{
+    margin-top: 15px;
+}
+
+.icone{
+    @include image-size(35px, 35px);
+    margin-bottom: -73px;
+}
+
+.contact-title-main{
+    @include text-style(220%);
+    margin-bottom: -10px;
+    margin-top: 30px;
+}
+
+.contact-text{
+    @include text-style(180%);
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+.contact-text-secondary{
+    @include text-style(150%);
+    margin-left: 40px;
+}

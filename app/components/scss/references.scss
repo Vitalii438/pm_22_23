@@ -1,0 +1,37 @@
+@use "components/scss/general" as *;
+
+.references {
+  @include rounded-border();
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+.references-shape {
+  @include image-size(230px, 40px);
+  margin-bottom: 0px;
+  margin-top: -15px;
+  display: flex;
+  justify-self: center;
+}
+
+.references-title-main {
+  @include text-style(140%, white);
+  margin-top: -33px;
+  text-align: center;
+}
+
+.references-title-secondary {
+  @include text-style(140%);
+  font-size: 120%;
+  margin-top: 10px;
+}
+
+.references-title-third {
+  @include text-style(140%);
+}
+
+.references-text {
+  @include text-style(120%);
+}

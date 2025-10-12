@@ -1,0 +1,19 @@
+@mixin image-size($width, $height, $fit: fill) {
+  width: $width;
+  height: $height;
+  object-fit: $fit;
+}
+
+@mixin text-style($font-size: 100%, $color: black) {
+  font-size: $font-size;
+  color: $color;
+}
+
+@mixin rounded-border($size: 5px, $color: lightgray, $radius: 50px) {
+  border: $size solid $color;
+  border-radius: $radius;
+}
+
+body{
+    background-color: rgb(199, 255, 0);
+}
