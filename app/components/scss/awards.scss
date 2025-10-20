@@ -13,12 +13,14 @@
 
 .awards-title-secondary {
   @include text-style(120%);
+  opacity: 0.85;
   margin-top: 10px;
   margin-bottom: 0px;
 }
 
 .awards-title-third {
   @include text-style(110%);
+  opacity: 0.78;
 }
 
 .awards-text {

@@ -8,27 +8,48 @@
 .skills-shape-main {
   @include image-size(350px, 7px);
   margin-top: -35px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
   margin-right: 80px;
   display: flex;
   justify-self: end;
 }
 
-.skills-shape-long {
-  @include image-size(250px, 20px);
-  display: block;
-}
+.skills-progress {
+  width: 250px;
+  height: 20px;
+  appearance: none;
+  border: none;
+  position: relative;
+  background-color: lightgray;
+  border-radius: 0;
+  //overflow: hidden;
 
-.skills-shape-short {
-  @include image-size(125px, 21px);
-  margin-top: -46px;
-}
+  &::-webkit-progress-bar {
+    background-color: lightgray;
+  }
 
-.skills-shape-point {
-  @include image-size(30px, 15px);
-  rotate: 90deg;
-  margin-left: -20px;
-  margin-top: -49px;
+  &::-webkit-progress-value {
+    background-color: black;
+    transition: width 0.3s ease;
+  }
+
+  &::-moz-progress-bar {
+    background-color: black;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 30px;
+    background-color: black;
+    border-radius: 7px;
+    z-index: 1;
+    pointer-events: none;
+  }
 }
 
 .skills-title-main {

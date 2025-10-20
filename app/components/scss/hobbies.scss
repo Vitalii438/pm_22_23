@@ -2,7 +2,7 @@
 
 
 .hobbies-shape{
-    @include image-size(170px, 22px);
+    @include image-size(170px, 21px);
     margin-bottom: -190px;
     margin-left: 20px;
      rotate: 90deg;
@@ -13,22 +13,25 @@
     @include text-style(220%);
     margin-left: 80px;
     margin-top: 25px;
-    margin-bottom: -15px;
+    margin-bottom: -5px;
     display: flex;
-}
+} 
 
 .hobbies-title-secondary{
     @include text-style(130%);
-    margin-left: 130px;
+    display: inline-block;
+    margin-left: 75px;
+    margin-bottom: 0px;
 }
 
 .underlined{
-    text-decoration: underline;
-    text-decoration-thickness: 5px;
-    position: relative;
+    padding-left: 55px;
+    //display: inline-flex;
+    border-bottom: 5px solid black;
+    border-bottom-left-radius: 5px;
 }
 
-.underlined::before {
+.punderlined::before {
   content: "";
   display: block;
   position: absolute;

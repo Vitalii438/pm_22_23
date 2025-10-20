@@ -13,9 +13,40 @@
   margin-left: 148px;
 }
 
+.languages-content{
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.languages-progress {
+  display: flex;
+  width: 200px;
+  height: 20px;
+  appearance: none;
+  border: none;
+  background-color: lightgray; 
+
+  &::-webkit-progress-bar {
+    background-color: lightgray;
+    border-radius: 0;
+  }
+
+  &::-webkit-progress-value {
+    background-color: black; 
+    transition: width 0.3s ease;
+  }
+
+  &::-moz-progress-bar {
+    background-color: black;
+  }
+}
+
+
 .languages-title-secondary {
   @include text-style(140%);
+  display: flex;
   font-size: 120%;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 0px;
+  margin-right: 20px;
 }

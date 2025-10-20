@@ -11,7 +11,7 @@
 .references-shape {
   @include image-size(230px, 40px);
   margin-bottom: 0px;
-  margin-top: -15px;
+  margin-top: -21px;
   display: flex;
   justify-self: center;
 }
@@ -24,8 +24,9 @@
 
 .references-title-secondary {
   @include text-style(140%);
+  opacity: 0.85;
   font-size: 120%;
-  margin-top: 10px;
+  margin-top: 45px;
 }
 
 .references-title-third {

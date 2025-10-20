@@ -16,7 +16,7 @@ function serve(done) {
     server: {
       baseDir: "dist",
     },
-    port: 3000,
+    port: 3000, 
   });
   done();
 }

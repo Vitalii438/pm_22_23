@@ -1,29 +1,41 @@
-@use 'components/scss/general' as *;
+@use "components/scss/general" as *;
 
-
-.people-shape{
-    @include image-size(180px, 32px);
-    margin-bottom: -46px;
+.people-shape {
+  @include image-size(170px, 5px);
+  margin-top: -10px;
+  margin-left: 129px;
 }
 
-
-.people-title-main{
-    @include text-style(140%);
-    margin-left: 35px;
-    display: flex;
+.people-img {
+  @include image-size(68%, auto, cover);
+  margin-bottom: -140px;
+  margin-left: 71px;
+  border-radius: 19px;
 }
 
-.people-title-secondary{
-    @include text-style(140%);
-    font-size: 120%;
-    margin-top: 10px;
-    margin-bottom: 0px;
+.people-img-shape {
+  @include image-size(68%, 116px);
+  margin-top: -158px;
+  margin-left: 71px;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
+  opacity: 0.73;
 }
 
-.people-title-third{
-    @include text-style(140%);
+.people-title-main {
+  @include text-style(385%, white);
+  margin-bottom: -14px;
+  text-align: center;
 }
 
-.people-text{
-    @include text-style(140%);
+.people-title-secondary {
+  @include text-style(150%, white);
+  margin-top: 30px;
+  margin-bottom: -14px;
+  text-align: center;
+}
+
+.people-title-third {
+  @include text-style(110%, white);
+  text-align: center;
 }

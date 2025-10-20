@@ -16,12 +16,14 @@
 }
 
 .contact-text{
-    @include text-style(180%);
+    @include text-style(170%);
+    opacity: 0.78;
     margin-left: 40px;
     padding-top: 10px;
 }
 
 .contact-text-secondary{
+    opacity: 0.78;
     @include text-style(150%);
     margin-left: 40px;
 }

@@ -14,39 +14,17 @@
     <link rel="stylesheet" href="css/index.min.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row-12 d-flex">
-        <div class="col-4">@@include("components/html/people.html")</div>
-        <div class="col-8">
-          @@include("components/html/about.html")
-          @@include("components/html/awards.html")
-        </div>
-      </div>
+    <header class="header container">
+      @@include("components/html/_header.html")
+    </header>
 
-      <div class="row-12 d-flex">
-        <div class="col-4">
-          @@include("components/html/references.html")
-          @@include("components/html/contact.html")
-        </div>
+    <section class="main-content container">
+      @@include("components/html/_main-content.html")
+    </section>
 
-        @@include("components/html/experience.html")
-        @@include("components/html/education.html")
-      </div>
-
-      <div class="row-12 d-flex">
-        @@include("components/html/skills.html")
-        @@include("components/html/hobbies.html")
-      </div>
-
-      <div class="row-12 d-flex">
-        @@include("components/html/languages-top.html")
-      </div>
-
-      <div class="row-12 d-flex">
-        @@include("components/html/languages.html")
-      </div>
-    </div>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <footer class="footer container">
+      @@include("components/html/_footer.html")
+    </footer>
   </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </html>
