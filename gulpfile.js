@@ -32,9 +32,9 @@ function watchFiles() {
   watch("app/css/*.css", series(css_task, reload));
   watch("app/scss/*.scss", series(scss_task, reload));
   watch("app/components/scss/*.scss", series(scss_task, reload));
-  watch("app/js/*.js", series(js_task, reload));
-  watch("app/img/*", series(img_task, reload));
-  watch("app/svg/*", series(svg_task, reload));
+  watch("app/components/js/*.js", series(js_task, reload));
+  watch("app/components/img/*", series(img_task, reload));
+  watch("app/components/svg/*", series(svg_task, reload));
 }
 
 const build = parallel(

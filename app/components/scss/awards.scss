@@ -6,7 +6,7 @@
 }
 
 .awards-title-main {
-  @include text-style(140%, white);
+  @include text-style(140%, $title-font-color);
   margin-left: 35px;
   display: flex;
 }

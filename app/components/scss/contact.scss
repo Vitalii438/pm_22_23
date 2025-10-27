@@ -4,6 +4,32 @@
     margin-top: 15px;
 }
 
+.contact-header{
+    display: flex;
+}
+
+.hidden {
+  //display: none;
+  opacity: 0;
+}
+
+.contact-arrow {
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform: rotate(-90deg);
+  margin-top: 32px;
+  margin-bottom: 0px;
+}
+
+.contact-content {
+  transition: opacity 0.3s ease;
+}
+
+.rotated {
+  transform: rotate(90deg);
+}
+
 .icone{
     @include image-size(35px, 35px);
     margin-bottom: -73px;

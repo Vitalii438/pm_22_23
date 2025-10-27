@@ -17,7 +17,7 @@
 }
 
 .experience-title-main {
-  @include text-style(140%, white);
+  @include text-style(140%, $title-font-color);
   margin-top: 13px;
   text-align: center;
 }

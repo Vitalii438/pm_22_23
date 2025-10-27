@@ -19,23 +19,23 @@
   margin-left: 71px;
   border-bottom-left-radius: 19px;
   border-bottom-right-radius: 19px;
-  opacity: 0.73;
+  opacity: 0.55;
 }
 
 .people-title-main {
-  @include text-style(385%, white);
+  @include text-style(clamp(10px, calc(20px + (41.6 * ((100vw - 320px) / 1120))) , 61.6px), $title-font-color);
   margin-bottom: -14px;
   text-align: center;
 }
 
 .people-title-secondary {
-  @include text-style(150%, white);
+  @include text-style(150%, $title-font-color);
   margin-top: 30px;
   margin-bottom: -14px;
   text-align: center;
 }
 
 .people-title-third {
-  @include text-style(110%, white);
+  @include text-style(110%, $title-font-color);
   text-align: center;
 }
